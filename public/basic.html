@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cisco Jabber SDK Demo</title>
+
+	<link href="css/basic.css" rel="stylesheet" type="text/css" />
+	<script src="js/ciscobase.js"></script>
+	<script src="js/cwic-debug.js"></script>
+	<script src="js/basic.js"></script>
+</head>
+
+<body>
+	<div id="message">
+		<h1>Cisco Jabber Web SDK - Basic Sample App</h1>
+	</div>
+
+	<a href="https://chrome.google.com/webstore/detail/cisco-web-communicator/mbhnoblcplfcookpoennihpndjobapeo"
+		target="_blank">Jabber SDK Chrome Extension</a>
+	<br>
+
+	<div>
+		<input type="checkbox" id="initialized-checkbox" onclick="return false">CWIC extension initialized
+	</div>
+	<div>
+		<input type="checkbox" id="authorized-checkbox" onclick="return false">Audio/Video authorized
+	</div>
+	<div>
+		<input type="checkbox" id="signingin-checkbox" onclick="return false">Signing in&nbsp;<span id="signingin-server"></span>
+	</div>
+	<div>
+		<input type="checkbox" id="inprogress-checkbox" onclick="return false">Authentication in progress...
+	</div>
+	<div>
+		<input type="checkbox" id="authenticated-checkbox" onclick="return false">Authenticated
+	</div>
+	<br>
+	<div>
+		Selected device: <span id="selected-device"></span> <span id="connection-status"></span>
+	</div>
+	<br>
+	<div>
+		Directory Number: <span id="directory-number"></span>
+	</div>
+
+	<br>
+	<label for="numtodial">Number to dial:</label>
+	<input type="text" id="destination" />
+
+	<button type="button" id="make-call" disabled>Make Call</button>
+	<button type="button" id="end-call" disabled>End Call</button>
+	<span id="call-status"></span>
+	<br>
+	<br>
+	<div id="remote-video-container" class="rvc"></div>
+</body>
+
+</html>
